@@ -1,0 +1,18 @@
+<body>    
+<ul>
+    <li *ngFor="let restaurant of restaurants">
+        <a style="text-decoration:none"  href="http://localhost:4200/restaurant/{{restaurant.restaurantID}}">
+            <!-- <h1>{{restaurant.restaurantID}}</h1> -->
+            <img src="./assets/food-1.jpg" alt="image">
+            <div>
+                <h2>{{restaurant.name}}</h2>
+            </div>
+            <div>
+                <h6>{{restaurant.address}}</h6>
+                <h5>{{restaurant.contactNumber}}</h5>
+            </div>
+        </a>
+    </li>
+</ul>
+
+</body>

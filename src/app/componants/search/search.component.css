@@ -1,0 +1,16 @@
+.search{
+    border-radius: 5rem 0 0 5rem;
+    font-size: small;
+    border: none;
+    outline: none;
+  }
+ button{
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-radius: 0rem 20rem 20rem 0rem ;
+    overflow: hidden;
+    border: none;
+    outline: none;
+
+  }
+  

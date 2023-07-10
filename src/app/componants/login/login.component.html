@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+
+  <section>
+ <form >
+   <div class="form">
+     <div class="title">Welcome</div>
+     <div class="subtitle">Login Here!</div>
+     <div class="input-container ic1">
+       <input id="email" class="input"  type="text" [(ngModel)]="user.email"  placeholder="email "  [ngModelOptions]="{standalone: true}"/>
+       <div class="cut"></div>
+       <label for="email" class="placeholder">Email</label>
+     </div>
+
+     <div class="input-container ic2">
+       <input id="password" class="input" type="password" [(ngModel)]="user.password" placeholder="password " [ngModelOptions]="{standalone: true}"/>
+       <div class="cut"></div>
+       <label for="password" class="placeholder">Password</label>
+     </div>
+
+     <button type="text" class="submit" (click)="loginnow()">login</button>
+     <button class="register" routerLink="/register">register</button>
+   </div>
+ </form>
+</section>
+
+</body>
+</html>

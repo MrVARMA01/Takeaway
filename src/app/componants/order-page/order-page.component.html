@@ -1,0 +1,35 @@
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+
+<body>    
+<div class="container">
+<form [formGroup]="customer">
+    <div>
+        <br>
+        <h1>Confirm your details</h1>
+    </div>
+    <br>
+
+    <label>Name:</label>
+    <input type="text" class="form-control w-500 m-3" placeholder="name..." formControlName="name">
+    
+    <label>Email:</label>
+    <input type="text" class="form-control w-500 m-3" placeholder="email..." formControlName="email">
+    
+    <label>ContactNumber:</label>
+    <input type="text" class="form-control w-500 m-3" placeholder="contactNumber..." formControlName="cno">
+    
+    <label>Date:</label>
+    <input type="date" class="form-control w-500 m-3" placeholder="date..." formControlName="date">
+    
+    <label>Time:</label>
+    <input type="time" class="form-control w-500 m-3" placeholder="time..." formControlName="time">
+    
+    <br class="input-container">
+    <button class="btn btn-primary" (click)="show()">place order</button>
+</form>
+</div>
+
+</body>

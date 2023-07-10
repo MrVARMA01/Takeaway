@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+
+ <form (ngSubmit)="registerNow()">
+   <div class="form">
+     <div class="subtitle">Register page</div>
+     <div class="input-container ic1">
+       <input id="firstname" class="input"  type="text" [(ngModel)]="newRegistration.firstname"  placeholder="firstname "  [ngModelOptions]="{standalone: true}" required/>
+       <div class="cut"></div>
+       <label for="firstname" class="placeholder">firstname</label>
+     </div>
+
+     <div class="input-container ic2">
+       <input id="lastname" class="input" type="text" [(ngModel)]="newRegistration.lastname" placeholder="lastname " [ngModelOptions]="{standalone: true}"/>
+       <div class="cut"></div>
+       <label for="lastname" class="placeholder">lastname</label>
+     </div>
+
+     <div class="input-container ic3">
+        <input id="contactNumber" class="input" type="text" [(ngModel)]="newRegistration.contactNumber" placeholder="contactNumber " [ngModelOptions]="{standalone: true}" required/>
+        <div class="cut"></div>
+        <label for="contactNumber" class="placeholder">contactNumber</label>
+      </div>
+
+      <div class="input-container ic4">
+        <input id="email" class="input" type="text" [(ngModel)]="newRegistration.email" placeholder="email" [ngModelOptions]="{standalone: true}" required/>
+        <div class="cut"></div>
+        <label for="email" class="placeholder">email</label>
+      </div>
+
+      <div class="input-container ic5">
+        <input id="password" class="input" type="password" [(ngModel)]="newRegistration.password" placeholder="password" [ngModelOptions]="{standalone: true}" required/>
+        <div class="cut"></div>
+        <label for="password" class="placeholder">Password</label>
+      </div>
+
+     <button type="submit" class="submit">submit</button>
+     
+   </div>
+ </form>
+</body>
+</html>

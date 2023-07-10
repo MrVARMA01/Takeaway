@@ -1,0 +1,27 @@
+body{
+    background-color: darkviolet;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2rem solid whitesmoke;
+    border-radius:3rem ;
+    background-color:rgb(52, 52, 52);
+    color: white;
+}
+h1{
+    font-family: 'Tilt Prism', cursive;
+    font-size:xx-large;
+}
+.input-container{
+    padding: 1rem;
+}
+
+input.ng-touched.ng-invalid{
+    border: 3px solid red;
+}
+label{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}

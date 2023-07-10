@@ -1,0 +1,37 @@
+<body>
+    
+<div class="container">
+    <section class="section1">
+        <div class="image">
+            <img src="./assets/food-1.jpg" alt="image">
+        </div>
+        <div>
+            <h1> {{restaurant.name}}</h1>
+            <h6> {{restaurant.address}}</h6>
+            <h3>contactNumber: {{restaurant.contactNumber}}</h3>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div>
+            <table>
+                <tr>
+                    <th ><h2>Item</h2></th>
+                    <th><h2>Price</h2></th>
+                    <th></th>
+                </tr>
+                <tr *ngFor="let i of items">
+                    <td>{{i.item}}</td>
+                    <td>{{i.price}}</td>
+                    <td><button class="button" mat-raised-button routerLink="/order-page">order</button></td>
+                </tr> 
+            </table>
+        </div>
+        <div class="button-div">
+        </div>
+    </section>
+
+    
+</div>
+
+</body>

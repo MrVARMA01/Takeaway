@@ -1,0 +1,35 @@
+body{
+    background-color: darkviolet;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+
+}
+ul li a{
+    /* width: 20rem; */
+    border: 20px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #000;
+    background-color: white;
+}
+li a:hover{
+    opacity: 0.9;
+}
+h2{
+    color:blue ;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+h5,h6{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
